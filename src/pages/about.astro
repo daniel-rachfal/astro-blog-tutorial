@@ -21,7 +21,7 @@ const skills = [
 ];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 1;
 ---
 
@@ -62,8 +62,6 @@ const goal = 1;
 
     {happy && <p>I am happy to be learning Astro!</p>}
 
-    {finished && <p>I finished this tutorial!</p>}
-
     {
         goal === 3 ? (
             <p>My goal is to finish in 3 days.</p>
@@ -71,4 +69,6 @@ const goal = 1;
             <p>My goal is not 3 days.</p>
         )
     }
+
+    {finished && <p>I finished this tutorial!</p>}
 </BaseLayout>
